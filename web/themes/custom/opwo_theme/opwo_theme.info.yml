@@ -1,0 +1,25 @@
+name: OnPoint WebOps Drupal Theme
+type: theme
+description: 'A custom theme for OnPoint WebOps Drupal'
+package: Core
+version: VERSION
+core_version_requirement: ^8 || ^9
+project: 'opwo_theme'
+base theme: false
+
+libraries:
+  - core/normalize
+  - opwo_theme/global
+
+regions:
+  top_utility: Top Utility
+  header: Header
+  help: Help
+  breadcrumb: Breadcrumb
+  page_top: 'Page top'
+  page_bottom: 'Page bottom'
+  highlighted: Highlighted
+  content: Content
+  below_content: 'Below content'
+  hidden_listings: 'Hidden listings'
+  footer: Footer

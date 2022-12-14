@@ -1,0 +1,12 @@
+uuid: 53ecfdba-000c-4225-a185-2fc5203b147c
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+_core:
+  default_config_hash: qWEfzaEoTw1HvDRS1kgw8XowcTY45l1eloIhnbvEaqA
+id: media.svg_icon
+label: 'SVG icon'
+targetEntityType: media
+cache: true

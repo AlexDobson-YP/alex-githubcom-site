@@ -1,0 +1,19 @@
+uuid: f11d8f12-9c5c-4003-8e03-733ae28769e0
+langcode: en
+status: true
+dependencies:
+  module:
+    - update
+_core:
+  default_config_hash: eyCdbaEpHKsN9dRJmjyaefnU1i_l0zb77hYLmJbB07c
+title: 'Update indexes'
+id: update_cron
+weight: 0
+module: update
+callback: update_cron
+scheduler:
+  id: simple
+launcher:
+  id: serial
+logger:
+  id: database

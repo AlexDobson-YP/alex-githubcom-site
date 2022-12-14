@@ -1,0 +1,17 @@
+uuid: c0ccd204-c6a1-45c5-85b2-ac038e7e2d26
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: I-VIINg_fp-ByB3Ez5UvORyoEEqLQ4YPvAv6rH7pJFo
+name: thumbnail
+label: 'Thumbnail (100x100)'
+effects:
+  e2ff4d8b-c062-4eaa-8392-1d198c8217ca:
+    uuid: e2ff4d8b-c062-4eaa-8392-1d198c8217ca
+    id: image_scale
+    weight: 1
+    data:
+      width: 100
+      height: 100
+      upscale: false

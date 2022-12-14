@@ -1,0 +1,12 @@
+uuid: 17b7c2fd-1cf1-446d-9ad1-353c7da1787e
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs
+_core:
+  default_config_hash: nUNlcNbMzoOfW552_RR0Rj5lMiJMVo0dWsKLwNFa5vY
+id: paragraph.responsive_image_full_third_
+label: 'Responsive image (full - third)'
+targetEntityType: paragraph
+cache: true

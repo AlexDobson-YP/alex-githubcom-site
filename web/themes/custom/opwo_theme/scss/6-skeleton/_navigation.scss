@@ -1,0 +1,194 @@
+//
+// *NOTE: It is not recommended that you use these styles in their present form! It would be advisable to use these as reference only. Build your custom styles while keeping mobile-first, accessibility, and modularity top of mind.
+//
+
+nav {
+  ul[class^="menu__"] {
+    display: flex;
+    flex-direction: column;
+    flex-flow: row wrap;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    line-height: inherit;
+
+    li {
+      padding: 0 2rem;
+
+      a {
+        box-shadow: inset 0 -0.1rem 0 currentColor;
+        transition: 0.3s;
+
+        &:hover {
+          padding-bottom: 0.3rem;
+        }
+      }
+    }
+
+    @include breakpoint($m768) {
+      flex-direction: row;
+    }
+  }
+}
+
+.mobile_toggle__wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 11rem;
+  margin-right: $space_xs;
+  padding-top: 1rem;
+  padding-right: 2rem;
+  padding-bottom: 1rem;
+
+  @include breakpoint($m1024) {
+    display: none;
+  }
+}
+
+.mobile_toggle {
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: -$space_xs;
+    width: 11rem;
+    height: 11rem;
+    background-color: transparent;
+    transition: background-color 0.2s ease;
+  }
+
+  &.is-active::before {
+    background-color: $grey;
+  }
+
+  &:hover,
+  &:active {
+    background-color: transparent;
+  }
+}
+
+@media screen and (max-width: $m767) {
+  body.menu-is-active {
+    .overlay {
+      content: "";
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 2;
+      display: block;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(51, 51, 51, 0.9);
+      transition: 0.3s;
+    }
+  }
+}
+
+.has-hero-image {
+  header {
+    position: absolute;
+
+    nav ul[class^="menu__"] li a {
+      color: $black;
+
+      &:hover {
+        color: $white;
+      }
+
+      @include breakpoint($m768) {
+        color: $white;
+      }
+    }
+  }
+}
+
+header {
+  position: static;
+  width: 100%;
+
+  &.is-active {
+    @media screen and (max-width: $m767) {
+      z-index: 3;
+      background-color: $yellow;
+    }
+  }
+
+  .container {
+    @include breakpoint($m768) {
+      display: flex;
+      flex-direction: row;
+      flex-flow: row wrap;
+      align-items: center;
+      justify-content: space-between;
+      min-height: inherit;
+    }
+  }
+
+  nav {
+    height: 0;
+    margin-bottom: 1.8rem;
+    opacity: 0;
+    visibility: hidden;
+
+    &.is-active {
+      @extend %transition;
+      display: block;
+      height: auto;
+      opacity: 1;
+      visibility: visible;
+    }
+
+    ul[class^="menu__"] {
+      li {
+        padding: 1rem 0;
+        text-align: right;
+
+        &.menu-main__item--active-trail {
+          a {
+            padding-bottom: 0.3rem;
+            box-shadow: inset 0 -0.3rem 0 $yellow;
+          }
+        }
+
+        a {
+          color: $black;
+          box-shadow: none;
+          font-weight: 700;
+          font-size: 2rem;
+          text-transform: uppercase;
+
+          @include breakpoint($m768) {
+            font-size: 1.6rem;
+
+            &:hover {
+              box-shadow: inset 0 -0.3rem 0 $yellow;
+            }
+          }
+
+          @include breakpoint($m1024) {
+            font-size: 1.5rem;
+          }
+        }
+
+        @include breakpoint($m768) {
+          padding: 0 0.5rem;
+        }
+
+        @include breakpoint($m992) {
+          padding: 0 1rem;
+          text-align: left;
+        }
+      }
+    }
+
+    @include breakpoint($m768) {
+      display: block;
+      height: auto;
+      margin-bottom: 0;
+      background: none;
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+}

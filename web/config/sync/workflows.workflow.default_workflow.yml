@@ -1,0 +1,56 @@
+uuid: 94ac2dc5-c4c5-4165-ad70-de6f40560351
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.homepage
+  module:
+    - content_moderation
+_core:
+  default_config_hash: FjQkE992HbKA6xfB7pj3sLW5DVtkUV02Sn1w_F8oefk
+id: default_workflow
+label: 'Default workflow'
+type: content_moderation
+type_settings:
+  states:
+    archived:
+      label: Archived
+      weight: 2
+      published: false
+      default_revision: true
+    draft:
+      label: Draft
+      weight: 0
+      published: false
+      default_revision: false
+    published:
+      label: Published
+      weight: 1
+      published: true
+      default_revision: true
+  transitions:
+    archive:
+      label: Archive
+      from:
+        - draft
+        - published
+      to: archived
+      weight: 2
+    create_new_draft:
+      label: Draft
+      from:
+        - archived
+        - published
+      to: draft
+      weight: 0
+    publish:
+      label: Publish
+      from:
+        - archived
+        - draft
+      to: published
+      weight: 1
+  entity_types:
+    node:
+      - homepage
+  default_moderation_state: draft

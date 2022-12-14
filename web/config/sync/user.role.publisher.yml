@@ -1,0 +1,136 @@
+uuid: 46a494b6-3faf-48bd-bcb8-ccb8a4777fe7
+langcode: en
+status: true
+dependencies:
+  config:
+    - filter.format.basic_html
+    - filter.format.super_simple_html
+    - media.type.document
+    - media.type.image
+    - media.type.remote_video
+    - media.type.svg
+    - node.type.homepage
+    - workflows.workflow.default_workflow
+  module:
+    - actions_permissions
+    - content_moderation
+    - contextual
+    - dropzonejs
+    - entity_browser
+    - entity_usage
+    - file
+    - file_delete
+    - filter
+    - honeypot
+    - media
+    - node
+    - paragraphs
+    - paragraphs_library
+    - scheduled_transitions
+    - system
+    - taxonomy
+    - toolbar
+    - webform
+_core:
+  default_config_hash: 1I6KZIckYR9Bf3vAiJUjbx-9PCu4oDreQ0L8zpSjX3w
+id: publisher
+label: Publisher
+weight: -6
+is_admin: null
+permissions:
+  - 'access administration pages'
+  - 'access content overview'
+  - 'access contextual links'
+  - 'access entity usage statistics'
+  - 'access files overview'
+  - 'access media overview'
+  - 'access own webform configuration'
+  - 'access paragraphs_library_items entity browser pages'
+  - 'access taxonomy overview'
+  - 'access toolbar'
+  - 'access webform help'
+  - 'access webform overview'
+  - 'administer menu'
+  - 'administer taxonomy'
+  - 'bypass honeypot protection'
+  - 'create document media'
+  - 'create image media'
+  - 'create media'
+  - 'create paragraph library item'
+  - 'create remote_video media'
+  - 'create svg media'
+  - 'create webform'
+  - 'delete any document media'
+  - 'delete any image media'
+  - 'delete any media'
+  - 'delete any remote_video media'
+  - 'delete any svg media'
+  - 'delete files'
+  - 'delete homepage revisions'
+  - 'delete media'
+  - 'delete own document media'
+  - 'delete own image media'
+  - 'delete own remote_video media'
+  - 'delete own svg media'
+  - 'delete own webform'
+  - 'dropzone upload files'
+  - 'edit any document media'
+  - 'edit any homepage content'
+  - 'edit any image media'
+  - 'edit any remote_video media'
+  - 'edit any svg media'
+  - 'edit own document media'
+  - 'edit own homepage content'
+  - 'edit own image media'
+  - 'edit own remote_video media'
+  - 'edit own svg media'
+  - 'edit own webform'
+  - 'edit paragraph library item'
+  - 'execute entity:publish_action block_content'
+  - 'execute entity:publish_action media'
+  - 'execute entity:publish_action menu_link_content'
+  - 'execute entity:publish_action node'
+  - 'execute entity:publish_action paragraph'
+  - 'execute entity:publish_action paragraphs_library_item'
+  - 'execute entity:publish_action path_alias'
+  - 'execute entity:publish_action taxonomy_term'
+  - 'execute entity:save_action block_content'
+  - 'execute entity:save_action file'
+  - 'execute entity:save_action media'
+  - 'execute entity:save_action menu_link_content'
+  - 'execute entity:save_action node'
+  - 'execute entity:save_action paragraphs_library_item'
+  - 'execute entity:save_action taxonomy_term'
+  - 'execute entity:unpublish_action block_content'
+  - 'execute entity:unpublish_action media'
+  - 'execute entity:unpublish_action menu_link_content'
+  - 'execute entity:unpublish_action node'
+  - 'execute entity:unpublish_action paragraph'
+  - 'execute entity:unpublish_action paragraphs_library_item'
+  - 'execute entity:unpublish_action path_alias'
+  - 'execute node_assign_owner_action node'
+  - 'execute node_make_sticky_action node'
+  - 'execute node_make_unsticky_action node'
+  - 'execute node_promote_action node'
+  - 'execute node_unpromote_action node'
+  - 'execute node_unpublish_by_keyword_action node'
+  - 'execute webform_submission_make_unlock_action webform_submission'
+  - 'execute webform_submission_make_unsticky_action webform_submission'
+  - 'revert homepage revisions'
+  - 'update any media'
+  - 'update media'
+  - 'use default_workflow transition archive'
+  - 'use default_workflow transition create_new_draft'
+  - 'use default_workflow transition publish'
+  - 'use text format basic_html'
+  - 'use text format super_simple_html'
+  - 'view all media revisions'
+  - 'view all scheduled transitions'
+  - 'view any unpublished content'
+  - 'view any webform submission'
+  - 'view homepage revisions'
+  - 'view latest version'
+  - 'view own unpublished content'
+  - 'view own unpublished media'
+  - 'view the administration theme'
+  - 'view unpublished paragraphs'

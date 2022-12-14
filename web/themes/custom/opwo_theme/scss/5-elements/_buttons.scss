@@ -1,0 +1,25 @@
+.button,
+button,
+input[type="button"],
+input[type="submit"] {
+  @extend %transition;
+  display: inline-block;
+  width: auto;
+  height: auto;
+  padding: $space_xs;
+  border: solid 0.1rem $lightgrey;
+  border-radius: 0.4rem;
+  color: $black;
+  line-height: 1;
+  letter-spacing: normal;
+  cursor: pointer;
+
+  &:link,
+  &:visited {
+    text-decoration: none;
+  }
+
+  &:hover {
+    background-color: $buttongrey;
+  }
+}

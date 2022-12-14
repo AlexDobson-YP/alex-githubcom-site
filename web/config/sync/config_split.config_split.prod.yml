@@ -1,0 +1,17 @@
+uuid: 7cebffe7-77c8-4ea9-839d-2084e9cb23e2
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: bCEx6SgG7hnTlGy24m6V02wgg3MLPObYng8vDG9iVsw
+id: prod
+label: PROD
+description: ''
+folder: config/envs/prod
+module: {  }
+theme: {  }
+blacklist: {  }
+graylist: {  }
+graylist_dependents: true
+graylist_skip_equal: true
+weight: 0

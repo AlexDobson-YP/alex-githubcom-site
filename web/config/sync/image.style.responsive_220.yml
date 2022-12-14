@@ -1,0 +1,17 @@
+uuid: 2fa03454-48b2-4a21-b1d4-3334c3e0c417
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: iw0zwGhVX9cj9OxQjgVv5t0UHmsw7zMBFh-QXBhFu3U
+name: responsive_220
+label: 'Responsive 220'
+effects:
+  f08757c3-69d6-4529-a536-0c859d5f024f:
+    uuid: f08757c3-69d6-4529-a536-0c859d5f024f
+    id: image_scale
+    weight: 1
+    data:
+      width: 220
+      height: 220
+      upscale: false

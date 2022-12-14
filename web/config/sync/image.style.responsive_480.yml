@@ -1,0 +1,17 @@
+uuid: 93f39310-f57b-4021-af77-9784839c5dff
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: 4fpc6sEiqszX_inWPTEj7sVa3gl4vJ8qZqMkIUSTsdc
+name: responsive_480
+label: 'Responsive 480'
+effects:
+  06f1d7a2-6826-401e-9e47-a4657f950ecd:
+    uuid: 06f1d7a2-6826-401e-9e47-a4657f950ecd
+    id: image_scale
+    weight: 1
+    data:
+      width: 480
+      height: 480
+      upscale: false

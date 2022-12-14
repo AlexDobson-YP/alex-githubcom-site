@@ -1,0 +1,24 @@
+uuid: df9de8c1-5166-4c22-be86-73f644edb39a
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+  enforced:
+    module:
+      - alert
+      - node
+_core:
+  default_config_hash: 5dy8CLyQAnTpVT0qbBa2_jUGCbE_s013itcTYcGQl_g
+id: node.field_dismissible
+field_name: field_dismissible
+entity_type: node
+type: boolean
+settings: {  }
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

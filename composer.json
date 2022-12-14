@@ -1,0 +1,279 @@
+{
+  "name": "yellowpencil/drupal-9",
+  "description": "Project template for Drupal 9 at Yellow Pencil.",
+  "type": "project",
+  "license": "GPL-2.0-or-later",
+  "homepage": "https://yellowpencil.com/",
+  "support": {
+    "docs": "https://wiki.yellowpencil.com/display/DRUP/Drupal"
+  },
+  "repositories": {
+    "drupal": {
+      "type": "composer",
+      "url": "https://packages.drupal.org/8"
+    },
+    "dropzone-js": {
+      "type": "package",
+      "package": {
+        "name": "dropzone/dropzone",
+        "version": "5.7.2",
+        "type": "drupal-library",
+        "dist": {
+          "type": "zip",
+          "url": "https://github.com/dropzone/dropzone/archive/v5.7.2.zip"
+        }
+      }
+    },
+    "jquery-ui-touch-punch": {
+      "type": "package",
+      "package": {
+        "name": "furf/jquery-ui-touch-punch",
+        "version": "1.0",
+        "type": "drupal-library",
+        "source": {
+          "url": "https://github.com/furf/jquery-ui-touch-punch.git",
+          "type": "git",
+          "reference": "master"
+        }
+      }
+    },
+    "ckeditor-fakeobjects": {
+      "type": "package",
+      "package": {
+        "name": "ckeditor/fakeobjects",
+        "version": "4.16",
+        "type": "drupal-library",
+        "dist": {
+          "type": "zip",
+          "url": "https://download.ckeditor.com/fakeobjects/releases/fakeobjects_4.16.0.zip"
+        }
+      }
+    },
+    "ckeditor-indent-block": {
+      "type": "package",
+      "package": {
+        "name": "ckeditor/indentblock",
+        "version": "4.15",
+        "type": "drupal-library",
+        "dist": {
+          "type": "zip",
+          "url": "https://download.ckeditor.com/indentblock/releases/indentblock_4.15.0.zip"
+        }
+      }
+    },
+    "ckeditor-link": {
+      "type": "package",
+      "package": {
+        "name": "ckeditor/link",
+        "version": "4.16",
+        "type": "drupal-library",
+        "dist": {
+          "type": "zip",
+          "url": "https://download.ckeditor.com/link/releases/link_4.16.0.zip"
+        }
+      }
+    },
+    "ckeditor-youtube": {
+      "type": "package",
+      "package": {
+        "name": "ckeditor/youtube",
+        "version": "2.1.18",
+        "type": "drupal-library",
+        "dist": {
+          "type": "zip",
+          "url": "https://download.ckeditor.com/youtube/releases/youtube_2.1.18.zip"
+        }
+      }
+    },
+    "alerts_module_d8": {
+      "type": "package",
+      "package": {
+        "name": "yellowpencil/alerts_module_d8",
+        "version": "1.0",
+        "type": "drupal-module",
+        "source": {
+          "url": "git@git.yellowpencil.com:yellowpencil/alerts_module_d8.git",
+          "type": "git",
+          "reference": "origin/master"
+        }
+      }
+    },
+    "drupal_admin_guide": {
+      "type": "package",
+      "package": {
+        "name": "yellowpencil/drupal_admin_guide",
+        "version": "1.0",
+        "type": "drupal-module",
+        "source": {
+          "url": "git@git.yellowpencil.com:yellowpencil/drupal_admin_guide.git",
+          "type": "git",
+          "reference": "origin/main"
+        }
+      }
+    },
+    "drupal_yp_install_profile": {
+      "type": "package",
+      "package": {
+        "name": "yellowpencil/drupal_yp_install_profile",
+        "version": "1.0",
+        "type": "drupal-profile",
+        "source": {
+          "url": "git@git.yellowpencil.com:yellowpencil/drupal_yp_install_profile.git",
+          "type": "git",
+          "reference": "origin/main"
+        }
+      }
+    }
+  },
+  "require": {
+    "behat/behat": "^3.8",
+    "behat/mink": "^1.8",
+    "behat/mink-extension": "^2.3",
+    "ckeditor/fakeobjects": "^4.16",
+    "ckeditor/indentblock": "^4.15",
+    "ckeditor/link": "^4.16",
+    "ckeditor/youtube": "^2.1",
+    "composer/installers": "^1.9",
+    "cweagans/composer-patches": "^1.6",
+    "dropzone/dropzone": "^5.7.2",
+    "drupal/admin_toolbar": "^3.0",
+    "drupal/admin_toolbar_tools": "^3.0",
+    "drupal/anchor_link": "^2.5",
+    "drupal/better_exposed_filters": "^5.0@beta",
+    "drupal/chosen": "^3.0",
+    "drupal/ckeditor_indentblock": "^1.0@beta",
+    "drupal/clientside_validation": "^3.0@RC",
+    "drupal/conditional_fields": "^4.0@alpha",
+    "drupal/config_filter": "^2.2",
+    "drupal/config_ignore": "^2.3",
+    "drupal/config_split": "^1.4",
+    "drupal/core-composer-scaffold": "^9.1",
+    "drupal/core-recommended": "^9.1",
+    "drupal/ctools": "^3.4",
+    "drupal/devel": "^4.1",
+    "drupal/diff": "^1.0",
+    "drupal/dropzonejs": "^2.5",
+    "drupal/drupal-extension": "^4.1",
+    "drupal/editor_advanced_link": "^1.8",
+    "drupal/entity_browser": "^2.5",
+    "drupal/entity_usage": "^2.0@beta",
+    "drupal/field_group": "^3.1",
+    "drupal/file_delete": "^1.0",
+    "drupal/google_tag": "^1.4",
+    "drupal/honeypot": "^2.0",
+    "drupal/link_attributes": "^1.11",
+    "drupal/linkit": "^6.0@beta",
+    "drupal/mailsystem": "^4.3",
+    "drupal/maxlength": "^1.0@RC",
+    "drupal/media_bulk_upload": "^1.0@alpha",
+    "drupal/media_entity_file_replace": "^1.0",
+    "drupal/menu_block": "^1.6",
+    "drupal/menu_breadcrumb": "^1.14",
+    "drupal/menu_item_extras": "^2.14",
+    "drupal/metatag": "^1.16",
+    "drupal/metatag_open_graph": "^1.16",
+    "drupal/node_edit_protection": "^1.0",
+    "drupal/node_title_help_text": "^1.2",
+    "drupal/paragraphs": "^1.12",
+    "drupal/password_policy": "^3.0@beta",
+    "drupal/pathauto": "^1.8",
+    "drupal/redirect": "^1.6",
+    "drupal/redis": "^1.5",
+    "drupal/role_delegation": "^1.1",
+    "drupal/scheduled_transitions": "^2.0",
+    "drupal/simple_sitemap": "^3.10",
+    "drupal/smtp": "^1.0",
+    "drupal/stage_file_proxy": "^1.1",
+    "drupal/svg_image": "^1.14",
+    "drupal/token": "^1.9",
+    "drupal/twig_field_value": "^2.0",
+    "drupal/twig_tweak": "^3.0",
+    "drupal/ultimate_cron": "^2.0@alpha",
+    "drupal/username_enumeration_prevention": "^1.2",
+    "drupal/views_ajax_history": "^1.5",
+    "drupal/views_bulk_operations": "^3.12",
+    "drupal/views_infinite_scroll": "^1.8",
+    "drupal/webform": "^6.0",
+    "drush/drush": "^10.3",
+    "furf/jquery-ui-touch-punch": "*",
+    "kint-php/kint": "^3.3",
+    "kint-php/kint-js": "^2.0",
+    "kint-php/kint-twig": "^3.0",
+    "yellowpencil/alerts_module_d8": "*",
+    "yellowpencil/drupal_admin_guide": "*",
+    "yellowpencil/drupal_yp_install_profile": "*"
+  },
+  "conflict": {
+    "drupal/drupal": "*"
+  },
+  "minimum-stability": "stable",
+  "prefer-stable": true,
+  "config": {
+    "sort-packages": true,
+    "allow-plugins": {
+      "composer/installers": true,
+      "cweagans/composer-patches": true,
+      "drupal/core-composer-scaffold": true
+    }
+  },
+  "extra": {
+    "patches": {
+      "drupal/webp": {
+        "Fix to prevent WEBP image derivatives not generating and returing 403 error. More context here: https://www.drupal.org/project/webp/issues/3161795": "https://www.drupal.org/files/issues/2021-05-07/webp-replace-file-exists-call-with-entity-load-to-fix-image-generation-3161795-16.patch"
+      }
+    },
+    "drupal-scaffold": {
+      "locations": {
+        "web-root": "web/"
+      }
+    },
+    "installer-paths": {
+      "web/core": [
+        "type:drupal-core"
+      ],
+      "web/libraries/{$name}": [
+        "type:drupal-library"
+      ],
+      "web/libraries/ckeditor/plugins/{$name}": [
+        "type:drupal-ckeditor-plugin"
+      ],
+      "web/modules/contrib/{$name}": [
+        "type:drupal-module"
+      ],
+      "web/profiles/contrib/{$name}": [
+        "type:drupal-profile"
+      ],
+      "web/themes/contrib/{$name}": [
+        "type:drupal-theme"
+      ],
+      "drush/Commands/contrib/{$name}": [
+        "type:drupal-drush"
+      ]
+    }
+  },
+  "scripts": {
+    "install-starter-theme": [
+      ". scripts/starter_theme.sh"
+    ],
+    "process-docker-environment": [
+      ". scripts/process_docker.sh"
+    ],
+    "setup-docker-environment": [
+      ". scripts/setup_docker.sh"
+    ],
+    "installation-profile": [
+      ". scripts/installation_profile.sh"
+    ],
+    "post-create-project-cmd": [
+      "@process-docker-environment",
+      "@install-starter-theme",
+      "@setup-docker-environment",
+      "@installation-profile"
+    ]
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "YellowPencil\\Composer\\Scripts\\": "scripts/"
+    }
+  }
+}

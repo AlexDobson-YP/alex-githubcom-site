@@ -1,0 +1,15 @@
+uuid: 590cb002-0633-4e26-9406-cf6c81a8767c
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: dOuD5rM72ZdI6lMJJN5L_qZonPjUFG49e8dPkN2WjqY
+id: svg
+label: SVG
+description: 'Media type for SVG images.'
+source: image
+queue_thumbnail_downloads: false
+new_revision: false
+source_configuration:
+  source_field: field_media_image_1
+field_map: {  }

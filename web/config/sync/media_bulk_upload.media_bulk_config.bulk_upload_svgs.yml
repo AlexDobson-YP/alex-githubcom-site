@@ -1,0 +1,16 @@
+uuid: bf73e02d-a88f-4125-bcfb-fa50d1a39d8b
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: hOl5uicU_WIRSbJrtBjHudu-rm4Z33nzHjQw0nFFeIw
+id: bulk_upload_svgs
+label: 'Bulk upload SVGs'
+media_types:
+  svg: svg
+  document: 0
+  image: 0
+  remote_video: 0
+show_alt: null
+show_title: null
+form_mode: ''

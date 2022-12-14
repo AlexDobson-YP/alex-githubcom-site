@@ -1,0 +1,27 @@
+uuid: 6321c4f6-95d2-4ab1-83c6-a1a1f10e1479
+langcode: en
+status: false
+dependencies:
+  config:
+    - system.menu.admin
+  module:
+    - system
+  theme:
+    - opwo_theme
+_core:
+  default_config_hash: b48xjfzfAUfRy4YQtOsamPoGul1-iZbF9ir0QiRbERU
+id: opwo_theme_admin
+theme: opwo_theme
+region: header
+weight: 1
+provider: null
+plugin: 'system_menu_block:admin'
+settings:
+  id: 'system_menu_block:admin'
+  label: Administration
+  label_display: visible
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

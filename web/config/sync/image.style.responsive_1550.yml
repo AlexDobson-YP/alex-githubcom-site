@@ -1,0 +1,17 @@
+uuid: 71642f61-9fab-4d5c-be02-4e1d455ef313
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: zBErwz0DCBgWcA49oICdiQ2KAr1o05q0gjFDKy0gVRo
+name: responsive_1550
+label: 'Responsive 1550'
+effects:
+  b4a98ce9-f5ec-4353-a149-23d76935d101:
+    uuid: b4a98ce9-f5ec-4353-a149-23d76935d101
+    id: image_scale
+    weight: 1
+    data:
+      width: 1550
+      height: 1550
+      upscale: false

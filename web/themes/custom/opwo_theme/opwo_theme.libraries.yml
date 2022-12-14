@@ -1,0 +1,11 @@
+global:
+  version: VERSION
+  css:
+    base:
+      dist/main.css: {}
+    theme:
+      dist/print.css: { media: print }
+  js:
+    dist/main.js: {}
+  dependencies:
+    - core/drupal

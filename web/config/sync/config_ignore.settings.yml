@@ -1,0 +1,6 @@
+_core:
+  default_config_hash: bNHonGemSv-MO9XiYi_QpfljwiQLfqF7V5R_UwWfP2U
+ignored_config_entities:
+  - stage_file_proxy.settings.yml
+  - 'webform.webform.*'
+  - 'pathauto.pattern.*'

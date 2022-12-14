@@ -1,0 +1,12 @@
+uuid: 25f57343-fb5a-49ec-85bf-24ed3faa6bfd
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+_core:
+  default_config_hash: '-Hfb2I92BniYm_w9qSlXXQ0B1OaDnSAJRVh9fjZb_aA'
+id: media.responsive_image_full_third_
+label: 'Responsive image (full - third)'
+targetEntityType: media
+cache: true

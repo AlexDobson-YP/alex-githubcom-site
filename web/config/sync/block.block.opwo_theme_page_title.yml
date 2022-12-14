@@ -1,0 +1,20 @@
+uuid: f098e3b6-1e5a-4edb-8776-055b84a66f53
+langcode: en
+status: true
+dependencies:
+  theme:
+    - opwo_theme
+_core:
+  default_config_hash: etmNMsfhLz5Ar9KJ6AhIkMcB2YbM0ooc1lHlozP4wmQ
+id: opwo_theme_page_title
+theme: opwo_theme
+region: content
+weight: -30
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  label_display: '0'
+  provider: core
+visibility: {  }

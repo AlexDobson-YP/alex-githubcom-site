@@ -1,0 +1,16 @@
+uuid: 682cc50a-7866-49f8-8b61-f72d633229b9
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: VRwM7TZep21KveIJNW5iOY18VX6P71HDbxmY8Wy5M3I
+id: bulk_upload_images
+label: 'Bulk upload images'
+media_types:
+  image: image
+  document: 0
+  remote_video: 0
+  svg: 0
+show_alt: null
+show_title: null
+form_mode: ''

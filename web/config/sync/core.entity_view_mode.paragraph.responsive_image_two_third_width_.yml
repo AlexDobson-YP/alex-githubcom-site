@@ -1,0 +1,12 @@
+uuid: 3105f5d0-55ae-4b13-8023-8b495d7e71d5
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs
+_core:
+  default_config_hash: sJ6k62jbPv6krJmRzQ8E_5ozTDaLAvnzw-bfS3ot5wI
+id: paragraph.responsive_image_two_third_width_
+label: 'Responsive image (two-third width)'
+targetEntityType: paragraph
+cache: true

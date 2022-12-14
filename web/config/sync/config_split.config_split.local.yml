@@ -1,0 +1,18 @@
+uuid: 3247c3ba-ae2f-4f69-b4ca-a4a52948cc02
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: aRNUO8GTvy8-yV2D3VJGJxG8yhxsosSzphWCHyibinY
+id: local
+label: Local
+description: ''
+folder: config/envs/local
+module:
+  devel: 0
+theme: {  }
+blacklist: {  }
+graylist: {  }
+graylist_dependents: true
+graylist_skip_equal: true
+weight: 0

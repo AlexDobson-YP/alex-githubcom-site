@@ -1,0 +1,17 @@
+$m320: 20em; // 320px
+$m425: 26.5625em; // 425px
+$m640: 40em; // 640px
+$m767: 47.9375em; // 767px
+$m768: 48em; // 768px
+$m860: 53.75em; // 860px
+$m992: 62em; // 992px
+$m1023: 63.9375em; // 1023px
+$m1024: 64em; // 1024px
+$m1140: 71.25em; // 1140px
+$m1240: 77.5em; // 1240px
+
+@mixin breakpoint($breakpoint) {
+  @media (min-width: $breakpoint) {
+    @content;
+  }
+}

@@ -1,0 +1,111 @@
+form {
+  position: relative;
+}
+
+label {
+  display: block;
+  margin-bottom: $space_xs;
+  color: $black;
+  font-size: 1.4rem;
+  line-height: 1.43;
+}
+
+input,
+select,
+textarea {
+  width: 100%;
+  max-width: 75rem;
+  padding: 1.2rem $space_xs;
+  border: 0.2rem solid $offwhite;
+  background-color: $white;
+  color: $black;
+  font-size: 1.7rem;
+  line-height: 1.47;
+}
+
+input,
+select {
+  height: 4.8rem;
+}
+
+select {
+  padding-right: $space_xs;
+  padding-left: $space_xs;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M12.07,15.21c.07-.11,6.47-6.58,9.62-9.71a1.08,1.08,0,0,1,.56-.31.72.72,0,0,1,.51.19c.33.28.62.6.93.9s.41.72,0,1.13L12.51,18.58a.62.62,0,0,1-1,0L.34,7.45c-.46-.46-.46-.74,0-1.2l.81-.81a.68.68,0,0,1,1.1,0Z'/%3E%3C/svg%3E%0A");
+  background-position: right 1.2rem center;
+  background-size: 1.4rem;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  appearance: none;
+}
+
+select::-ms-expand {
+  display: none;
+}
+
+// checkbox/radio
+input[type='checkbox'],
+input[type='radio'] {
+  position: absolute;
+  z-index: -1;
+  width: 0.1rem;
+  height: 0.1rem;
+  color: $black;
+  opacity: 0;
+
+  + label {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    margin-bottom: $space_xs;
+    cursor: pointer;
+
+    &::before {
+      content: '';
+      width: 2.4rem;
+      height: 2.4rem;
+      margin-right: $space_xs;
+      border: solid 0.2rem $offwhite;
+      background-color: $white;
+    }
+
+    &::after {
+      content: '';
+      position: absolute;
+      background-color: $black;
+      transition: transform 0.025s ease-in-out;
+      transform: scale(0);
+    }
+  }
+
+  &:focus-visible + label::before {
+    outline: 0.1rem auto $yellow;
+  }
+
+  &:checked + label::after {
+    transform: scale(1);
+  }
+}
+
+input[type='checkbox'] {
+  + label::after {
+    top: 0.4rem;
+    left: 0.4rem;
+    width: 1.6rem;
+    height: 1.6rem;
+  }
+}
+
+input[type='radio'] {
+  + label::before {
+    border-radius: 50%;
+  }
+
+  + label::after {
+    top: 0.5rem;
+    left: 0.5rem;
+    width: 1.4rem;
+    height: 1.4rem;
+    border-radius: 50%;
+  }
+}

@@ -1,0 +1,15 @@
+uuid: e1e23aa4-94d8-42dc-8096-b101ffd8e75b
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: rtVrHF0rENcP8GbVwTe_HeLXyTTVZpBaaPeJ7gq3k90
+id: document
+label: Document
+description: 'Media type for all documents (pdf, doc, docx, pages, pdf, etc...).'
+source: file
+queue_thumbnail_downloads: false
+new_revision: false
+source_configuration:
+  source_field: field_media_file
+field_map: {  }

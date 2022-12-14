@@ -1,0 +1,17 @@
+uuid: 4dfb7cfa-5bd2-4fa6-ab9a-b3e31a2ed588
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: rS8zaXth3VcRETcHkaLT4woV6fUldkjPx5REsI22xTo
+name: responsive_960
+label: 'Responsive 960'
+effects:
+  6c74b365-53fc-4a09-a210-4a1a0aaf9b4e:
+    uuid: 6c74b365-53fc-4a09-a210-4a1a0aaf9b4e
+    id: image_scale
+    weight: 1
+    data:
+      width: 960
+      height: 960
+      upscale: false

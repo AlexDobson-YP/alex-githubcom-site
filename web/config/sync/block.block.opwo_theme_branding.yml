@@ -1,0 +1,25 @@
+uuid: ab487965-1ea5-4d61-a059-f26420dcfcbe
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - opwo_theme
+_core:
+  default_config_hash: VvAClyXlFwA4_HYCFKo4M9WfYer32KnAl9cLZDCG_es
+id: opwo_theme_branding
+theme: opwo_theme
+region: header
+weight: 0
+provider: null
+plugin: system_branding_block
+settings:
+  id: system_branding_block
+  label: 'Site branding'
+  label_display: '0'
+  provider: system
+  use_site_logo: true
+  use_site_name: true
+  use_site_slogan: true
+visibility: {  }

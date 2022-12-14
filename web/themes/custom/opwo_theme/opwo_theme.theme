@@ -1,0 +1,197 @@
+<?php
+
+/**
+ * @file
+ * Preprocess functions for opwo_theme.
+ */
+
+use Drupal\node\NodeInterface;
+use Drupal\Core\Cache\CacheableMetadata;
+
+/**
+ * Prepares variables for the html.html.twig template.
+ */
+function opwo_theme_preprocess_html(&$variables) {
+  try {
+    $variables['is_front'] = \Drupal::service('path.matcher')->isFrontPage();
+  }
+  catch (Exception $e) {
+    // If the database is not yet available, set default values for these
+    // variables.
+    $variables['is_front'] = FALSE;
+  }
+
+  // If we're on the front page.
+  if (!$variables['is_front']) {
+    // Add unique classes for each page and website section.
+    $path = \Drupal::service('path.current')->getPath();
+    $alias = \Drupal::service('path_alias.manager')->getAliasByPath($path);
+    $alias = trim($alias, '/');
+
+    if (!empty($alias)) {
+      $name = str_replace('/', '-', $alias);
+      $variables['attributes']['class'][] = 'page-' . $name;
+      list($section,) = explode('/', $alias, 2);
+
+      if (!empty($section)) {
+        $variables['attributes']['class'][] = 'section-' . $section;
+      }
+    }
+  }
+
+  // Add cachability metadata.
+  $theme_name = \Drupal::theme()->getActiveTheme()->getName();
+  $theme_settings = \Drupal::config($theme_name . '.settings');
+  CacheableMetadata::createFromRenderArray($variables)
+    ->addCacheableDependency($theme_settings)
+    ->applyTo($variables);
+  // Union all theme setting variables to the html.html.twig template.
+  $variables += $theme_settings->getOriginal();
+
+  // Include theme dist path for rendering SVG sprite.
+  $variables['dist_path'] = \Drupal::theme()->getActiveTheme()->getPath() . '/dist/';
+}
+
+/**
+ * F-- page. alter.
+ */
+function opwo_theme_suggestions_page_alter(array &$suggestions, array $variables) {
+  // Add content type suggestions.
+  if (!empty($node)) {
+    if ($node = \Drupal::request()->attributes->get('node')) {
+      $revision = \Drupal::request()->attributes->get('node_revision');
+
+      if (isset($revision)) {
+        $node = node_revision_load($revision);
+      }
+
+      array_splice($suggestions, 1, 0, 'page__' . $node->getType());
+    }
+
+    $path_args = explode('/', trim(\Drupal::service('path.current')->getPath(), '/'));
+    $http_error_suggestions = [
+      'system.401' => 'page__401',
+      'system.403' => 'page__403',
+      'system.404' => 'page__404',
+    ];
+    $route_name = \Drupal::routeMatch()->getRouteName();
+
+    if (isset($http_error_suggestions[$route_name])) {
+      $suggestions[] = $http_error_suggestions[$route_name];
+    }
+  }
+
+  $node = \Drupal::routeMatch()->getParameter('node');
+
+  if (empty($node)) {
+    $node = \Drupal::routeMatch()->getParameter('node_preview');
+  }
+
+  if (!empty($node)) {
+    $content_type = $node->bundle();
+    $suggestions[] = 'page__' . $content_type;
+  }
+}
+
+/**
+ * Implements hook_theme_suggestions_views_view_alter().
+ */
+function opwo_theme_theme_suggestions_views_view_alter(array &$suggestions, array $variables) {
+  if (isset($variables['view']->element['#view_id'])) {
+    $suggestions[] = 'views_view__' . $variables['view']->element['#view_id'];
+  }
+}
+
+/**
+ * Block suggestions for custom block bundles.
+ */
+function opwo_theme_theme_suggestions_block_alter(array &$suggestions, array $variables) {
+  if (isset($variables['elements']['content']['#block_content'])) {
+    array_splice($suggestions, 1, 0, 'block__bundle__' . $variables['elements']['content']['#block_content']->bundle());
+  }
+}
+
+/**
+ * Implements hook_preprocess_responsive_image_formatter().
+ */
+function opwo_theme_preprocess_responsive_image_formatter(&$variables) {
+  // Access image entity to set data attribute for intrinsic image width.
+  $variables['responsive_image']['#attributes']['data-original-image-width'] = $variables['item']->width;
+  $variables['responsive_image']['#attributes']['data-original-image-height'] = $variables['item']->height;
+}
+
+/**
+ * Implements hook_preprocess_responsive_image().
+ */
+function opwo_theme_preprocess_responsive_image(&$variables) {
+  // Set explicit image width from saved value in the data attribute.
+  $variables['img_element']['#attributes']['width'] = $variables['img_element']['#attributes']['data-original-image-width'];
+  $variables['img_element']['#attributes']['height'] = $variables['img_element']['#attributes']['data-original-image-height'];
+}
+
+/**
+ * Implements hook_theme_preprocess_breadcrumb().
+ */
+function opwo_theme_preprocess_breadcrumb(&$variables) {
+  // Get current node from page request and route match.
+  $request = \Drupal::request();
+  $route_match = \Drupal::routeMatch();
+  $route = $route_match->getRouteObject();
+  $node = $route_match->getParameter('node');
+
+  // If current view is a node revision.
+  if (strpos(end($variables['breadcrumb'])['url'], 'revision')) {
+    // Remove 'empty' node element from breadcrumb path.
+    array_splice($variables['breadcrumb'], 1, 1);
+  }
+
+  // If node successfully loaded.
+  if ($node && $node instanceof NodeInterface) {
+    // Load menu link manager service.
+    $menu_link_manager = \Drupal::service('plugin.manager.menu.link');
+
+    // Get current node menu link.
+    $menu_link = $menu_link_manager->loadLinksByRoute('entity.node.canonical', ['node' => $node->id()]);
+
+    // If node is not published, manually build breadcrumbs.
+    if ('published' !== $node->get('moderation_state')->getString()) {
+      // Shift off the first item of the breadcrumb trail (home).
+      $variables['breadcrumb'] = [array_shift($variables['breadcrumb'])];
+
+      if (is_array($menu_link) && count($menu_link)) {
+        // If menu link exists, get first element of array.
+        $menu_link = reset($menu_link);
+
+        if ($menu_link->getParent()) {
+          // If menu link results, get menu link parents.
+          $parents = $menu_link_manager->getParentIds($menu_link->getParent());
+
+          // Loop through parents to build breadcrumb items.
+          foreach (array_reverse($parents) as $parent) {
+            $variables['breadcrumb'][] = [
+              'text' => $menu_link_manager->createInstance($parent)->getTitle(),
+              'url' => $menu_link_manager->createInstance($parent)->getUrlObject(),
+            ];
+          }
+        }
+      }
+    }
+
+    // Append current node to breadcrumb trail.
+    $variables['breadcrumb'][] = [
+      'text' => \Drupal::service('title_resolver')->getTitle($request, $route),
+    ];
+  }
+}
+
+/**
+ * Implements hook_js_alter().
+ */
+/*
+function opwo_theme_js_alter(&$javascript) {
+  if (array_key_exists('core/misc/progress.js', $javascript)) {
+    // Override the default progress.js to include additional markup.
+    $javascript['core/misc/progress.js']['data'] = \Drupal::theme()->getActiveTheme()->getPath() . '/js/source/progress.js';
+  }
+}
+*/

@@ -1,0 +1,27 @@
+uuid: 75984f95-b7b2-4843-9758-c70fe111754a
+langcode: en
+status: false
+dependencies:
+  config:
+    - system.menu.admin
+  module:
+    - system
+  theme:
+    - seven
+_core:
+  default_config_hash: b48xjfzfAUfRy4YQtOsamPoGul1-iZbF9ir0QiRbERU
+id: seven_admin
+theme: seven
+region: header
+weight: 1
+provider: null
+plugin: 'system_menu_block:admin'
+settings:
+  id: 'system_menu_block:admin'
+  label: Administration
+  label_display: visible
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

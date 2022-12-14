@@ -1,0 +1,19 @@
+uuid: ed4a8ccd-a735-4334-9c9f-5d80fb3712a0
+langcode: en
+status: true
+dependencies:
+  module:
+    - simple_sitemap
+_core:
+  default_config_hash: YrgPBf3xtcIYlVO5lXlH1fLLMSqUatyyMgp9yRUu3v8
+title: 'Default cron handler'
+id: simple_sitemap_cron
+weight: 0
+module: simple_sitemap
+callback: simple_sitemap_cron
+scheduler:
+  id: simple
+launcher:
+  id: serial
+logger:
+  id: database

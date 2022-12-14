@@ -1,0 +1,17 @@
+uuid: 28c51dec-9518-4f15-a14f-c7c69980138a
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: Bz27BryJSu1qedv6emFC915LPXhIp6a3iAJu2Mh77VE
+name: responsive_640
+label: 'Responsive 640'
+effects:
+  e3e1f28e-5544-4482-9d83-c9316878a736:
+    uuid: e3e1f28e-5544-4482-9d83-c9316878a736
+    id: image_scale
+    weight: 1
+    data:
+      width: 640
+      height: 640
+      upscale: false

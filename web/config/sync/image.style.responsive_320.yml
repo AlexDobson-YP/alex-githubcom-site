@@ -1,0 +1,17 @@
+uuid: a4618d41-278b-49a8-b4f5-12e7a97384b2
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: gdbDcanJOqimpBkwTzAnT3xRaXNnXRGkZA2U9MGiMdY
+name: responsive_320
+label: 'Responsive 320'
+effects:
+  95cb7437-2003-474e-9c37-bfb8e3ce0c3f:
+    uuid: 95cb7437-2003-474e-9c37-bfb8e3ce0c3f
+    id: image_scale
+    weight: 1
+    data:
+      width: 320
+      height: 320
+      upscale: false

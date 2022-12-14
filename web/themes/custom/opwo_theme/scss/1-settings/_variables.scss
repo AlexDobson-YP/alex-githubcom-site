@@ -1,0 +1,33 @@
+$container: 120rem;
+$base_font: 10px;
+$font_size: 1.6rem;
+
+// Colors
+$black: #3d3f4d;
+$grey: #A3A6CC;
+$lightergrey: #F3F5FB;
+$lightgrey: #E1E2F1;
+$darkgrey: #737391;
+$purple: #563674;
+$offwhite: #acacac;
+$buttongrey: #cececd;
+$beige: #efeeea;
+$white: #fff;
+$yellow: #FFE65C;
+$red: #DB6666;
+$green: #00B38F;
+
+:root {
+  --color-black: #3D3F4D;
+  --color-grey: #A3A6CC;
+  --color-lightergrey: #F3F5FB;
+  --color-lightgrey: #E1E2F1;
+  --color-darkgrey: #737391;
+  --color-purple: #563674;
+  --color-yellow: #FFE65C;
+  --color-red: #DB6666;
+  --color-green: #00B38F;
+  --color-background: var(--color-yellow);
+  --color-background: white;
+  --color-text: var(--color-black);
+}

@@ -1,0 +1,34 @@
+uuid: 93b3b273-17b2-458a-a0c8-e6680735449c
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+_core:
+  default_config_hash: HXX0WhD12Aac2hzWpTOlqYYkgTbILqJstDE3kBGq3B4
+id: default
+label: 'Default Linkit Profile'
+description: 'Default Linkit profile.'
+matchers:
+  556010a3-e317-48b3-b4ed-854c10f4b950:
+    uuid: 556010a3-e317-48b3-b4ed-854c10f4b950
+    id: 'entity:node'
+    weight: 0
+    settings:
+      metadata: 'by [node:author] | [node:created:medium]'
+      bundles: {  }
+      group_by_bundle: false
+      substitution_type: canonical
+      limit: 100
+      include_unpublished: false
+  3666cc5a-7dca-44e0-aefb-8bc572088987:
+    uuid: 3666cc5a-7dca-44e0-aefb-8bc572088987
+    id: 'entity:media'
+    weight: 0
+    settings:
+      metadata: '([media:field_media_file])'
+      bundles:
+        document: document
+      group_by_bundle: true
+      substitution_type: canonical
+      limit: 100

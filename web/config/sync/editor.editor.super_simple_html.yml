@@ -1,0 +1,44 @@
+uuid: 11ef1ea8-8379-4f80-8c5c-35ae99618a38
+langcode: en
+status: true
+dependencies:
+  config:
+    - filter.format.super_simple_html
+  module:
+    - ckeditor
+_core:
+  default_config_hash: 6dR-N_k6J_ubSGZowIAUzqTND9GvtFnQ0UH8vv7789g
+format: super_simple_html
+editor: ckeditor
+settings:
+  toolbar:
+    rows:
+      -
+        -
+          name: Formatting
+          items:
+            - Bold
+            - Italic
+            - Underline
+        -
+          name: Links
+          items:
+            - DrupalLink
+            - DrupalUnlink
+        -
+          name: Lists
+          items:
+            - BulletedList
+            - NumberedList
+  plugins:
+    drupallink:
+      linkit_enabled: true
+      linkit_profile: default
+image_upload:
+  status: false
+  scheme: public
+  directory: inline-images
+  max_size: ''
+  max_dimensions:
+    width: null
+    height: null

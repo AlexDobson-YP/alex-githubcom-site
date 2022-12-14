@@ -1,0 +1,21 @@
+uuid: 071c92b1-00f2-4f70-9bd0-6b74a5d66298
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_headline
+    - node.type.alert
+_core:
+  default_config_hash: beTQ9vNJKJDFJh9BYYLVwpvi1gNDFLU9aga7rVcfH4U
+id: node.alert.field_headline
+field_name: field_headline
+entity_type: node
+bundle: alert
+label: Headline
+description: 'Answer your users’ most frequent question about the crisis.'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

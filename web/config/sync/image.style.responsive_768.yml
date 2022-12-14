@@ -1,0 +1,17 @@
+uuid: 143e9313-7fa8-4850-ade1-1f6e14723e6e
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: 4JQgG9ORUBLznZg6c_LjFM375jd-scroFHQAVBQYZMU
+name: responsive_768
+label: 'Responsive 768'
+effects:
+  3ad78fae-59e4-4013-a914-05644e0b5425:
+    uuid: 3ad78fae-59e4-4013-a914-05644e0b5425
+    id: image_scale
+    weight: 1
+    data:
+      width: 768
+      height: 768
+      upscale: false

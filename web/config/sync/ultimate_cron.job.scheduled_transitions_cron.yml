@@ -1,0 +1,19 @@
+uuid: c5cb1576-bfd3-47cb-98b0-d90b860e7c13
+langcode: en
+status: true
+dependencies:
+  module:
+    - scheduled_transitions
+_core:
+  default_config_hash: YwPuDxrcoFNQkFSvhqoXvqCffyUICbIUhzg9DFBKi9A
+title: 'Default cron handler'
+id: scheduled_transitions_cron
+weight: 0
+module: scheduled_transitions
+callback: scheduled_transitions_cron
+scheduler:
+  id: simple
+launcher:
+  id: serial
+logger:
+  id: database

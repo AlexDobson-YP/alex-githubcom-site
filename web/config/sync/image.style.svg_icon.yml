@@ -1,0 +1,17 @@
+uuid: 814a6b99-2d8a-42f6-850a-680af88545d1
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: S4MniFUnjG2fF1X8OJGN9zY8lAlpG3B-Gi6zChm0Suw
+name: svg_icon
+label: 'SVG icon'
+effects:
+  0749977f-bb6a-4a8f-9d66-b6d5c6551fec:
+    uuid: 0749977f-bb6a-4a8f-9d66-b6d5c6551fec
+    id: image_scale
+    weight: 1
+    data:
+      width: 260
+      height: null
+      upscale: false

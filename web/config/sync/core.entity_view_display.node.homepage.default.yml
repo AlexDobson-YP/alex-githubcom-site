@@ -1,0 +1,22 @@
+uuid: 01842ab7-2188-491a-bd5f-00ae30e31d20
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.homepage
+  module:
+    - user
+_core:
+  default_config_hash: pxak9NtqzFPQansAO_0VUGsRkhiZQ1reIhzTbK0mQoE
+id: node.homepage.default
+targetEntityType: node
+bundle: homepage
+mode: default
+content:
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  langcode: true

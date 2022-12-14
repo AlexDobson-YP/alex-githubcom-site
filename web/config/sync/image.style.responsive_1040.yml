@@ -1,0 +1,17 @@
+uuid: 9f8a5ee2-4de0-4aaa-ac15-f6e49cffcec3
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: jSINIB8iOa3RjWGTgJUiM0LnZHFfB0Nubk7H6TpStZ0
+name: responsive_1040
+label: 'Responsive 1040'
+effects:
+  b4934f05-3b91-4725-a460-cf59e7de1f9b:
+    uuid: b4934f05-3b91-4725-a460-cf59e7de1f9b
+    id: image_scale
+    weight: 1
+    data:
+      width: 1040
+      height: 1040
+      upscale: false

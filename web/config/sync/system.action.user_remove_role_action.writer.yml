@@ -1,0 +1,16 @@
+uuid: 89f6333b-203a-4e24-ae34-033d4a493f3f
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.writer
+  module:
+    - user
+_core:
+  default_config_hash: 6fQIvXSmwEzltodsUCgJ_dNm4LwoVHoyvq3CXsvKfTg
+id: user_remove_role_action.writer
+label: 'Remove the Writer role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: writer

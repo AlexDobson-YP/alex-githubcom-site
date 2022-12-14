@@ -1,0 +1,23 @@
+uuid: e8baa48e-c764-43e1-9dd9-37f7e5e00a5f
+langcode: en
+status: false
+dependencies:
+  module:
+    - menu_ui
+  enforced:
+    module:
+      - alert
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+_core:
+  default_config_hash: UhFpKc1Gn3MuwEIzh8FXEuu_EtOu7unGkO-AU7dZUyU
+name: Alert
+type: alert
+description: 'A site-wide alert is displayed at the top of all screens, and used to share urgent information. '
+help: " A site-wide alert is displayed at the top of all screens, and used to share urgent information. An in-page alert is displayed at the top of a page that the alert is placed on.\r\nUse a unique name to identify your alert in Drupal."
+new_revision: true
+preview_mode: 1
+display_submitted: false

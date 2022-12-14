@@ -1,0 +1,12 @@
+uuid: 8980bd2f-dcb6-4666-8094-c1cd3f0894c7
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+_core:
+  default_config_hash: Ap9QAUImIvUlZPW_Pts-CgTDuTTWdWpzPdZG0XqcBwE
+id: media.responsive_image_half_width_
+label: 'Responsive image (half-width)'
+targetEntityType: media
+cache: true

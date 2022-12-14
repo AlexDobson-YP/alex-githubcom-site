@@ -1,0 +1,23 @@
+uuid: 79b406d0-5fbe-4faf-94b7-7fa6ebdedf33
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+_core:
+  default_config_hash: eYKJrYD1kmG6CSZPxeN8QBSmdJpSVkj056-Znd_0v_Q
+id: default_pattern
+label: 'Default pattern'
+type: 'canonical_entities:node'
+pattern: '[node:menu-link:parents:join-path]/[node:title]'
+selection_criteria:
+  a6a717ef-3b97-490b-a348-a0486f813694:
+    id: node_type
+    bundles: {  }
+    negate: false
+    context_mapping:
+      node: node
+    uuid: a6a717ef-3b97-490b-a348-a0486f813694
+selection_logic: and
+weight: -5
+relationships: {  }

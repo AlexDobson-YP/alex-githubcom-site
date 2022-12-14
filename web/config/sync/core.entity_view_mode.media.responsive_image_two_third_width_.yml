@@ -1,0 +1,12 @@
+uuid: ba1e7f49-6b54-42fc-a302-7980b76e7060
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+_core:
+  default_config_hash: 5urOqE4w0AT9-i5TjFUiSUzRoOeslZ2WSq_WMK0BPQs
+id: media.responsive_image_two_third_width_
+label: 'Responsive image (two-third width)'
+targetEntityType: media
+cache: true

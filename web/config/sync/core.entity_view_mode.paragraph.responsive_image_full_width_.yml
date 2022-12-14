@@ -1,0 +1,12 @@
+uuid: a532fdfc-a472-49ee-9621-e22d480742fd
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs
+_core:
+  default_config_hash: yISp9T4NLRHMdUtre7arYxrQnGzkfi5tl0BkSMyn3iA
+id: paragraph.responsive_image_full_width_
+label: 'Responsive image (full width)'
+targetEntityType: paragraph
+cache: true

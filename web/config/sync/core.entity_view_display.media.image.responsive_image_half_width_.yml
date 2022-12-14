@@ -1,0 +1,33 @@
+uuid: 4b93130b-ce7b-4694-9779-1f7395318722
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.media.responsive_image_half_width_
+    - field.field.media.image.field_media_image
+    - media.type.image
+    - responsive_image.styles.half_width
+  module:
+    - svg_image_responsive
+_core:
+  default_config_hash: 7KpgjKsrnogGMchRqOyLYZ9IY_im5lA3u7kK8f-WL2E
+id: media.image.responsive_image_half_width_
+targetEntityType: media
+bundle: image
+mode: responsive_image_half_width_
+content:
+  field_media_image:
+    label: hidden
+    weight: 0
+    settings:
+      responsive_image_style: half_width
+      image_link: ''
+    third_party_settings: {  }
+    type: responsive_image
+    region: content
+hidden:
+  created: true
+  langcode: true
+  name: true
+  thumbnail: true
+  uid: true

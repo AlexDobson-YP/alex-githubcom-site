@@ -1,0 +1,17 @@
+uuid: 47451141-9d42-4ffc-87c8-a15b8790844f
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: lOicttciagexSJYJ4xTD0GWy3E-6dwKWgwhB8LqlWIg
+id: uat
+label: UAT
+description: ''
+folder: config/envs/uat
+module: {  }
+theme: {  }
+blacklist: {  }
+graylist: {  }
+graylist_dependents: true
+graylist_skip_equal: true
+weight: 0

@@ -1,0 +1,17 @@
+uuid: 9dd1cc0c-774c-448d-89f0-d41d5148fa61
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: XWyAoDUOnacuvJf1Hfx_Wp5waFOLHzTIvSnNqn8JN4U
+name: responsive_520
+label: 'Responsive 520'
+effects:
+  e633625a-5372-4172-abbf-7336745fe33a:
+    uuid: e633625a-5372-4172-abbf-7336745fe33a
+    id: image_scale
+    weight: 1
+    data:
+      width: 520
+      height: 520
+      upscale: false

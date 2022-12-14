@@ -1,0 +1,23 @@
+uuid: 5c1b31b4-3ec4-43b2-8c61-080e5488f3c8
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+    - node_title_help_text
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+  node_title_help_text:
+    title_help: ''
+_core:
+  default_config_hash: Qt0Ze5Rl1S7nf8fesi5ElasUmBl8mGbdexLGWKRSZPk
+name: Homepage
+type: homepage
+description: 'The site homepage showcases'' featured content'' and provides clear signposts to key landing pages.'
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: false

@@ -1,0 +1,74 @@
+uuid: fd0c0d83-dfc8-40de-9a8e-ad850d19689c
+langcode: en
+status: true
+dependencies:
+  config:
+    - filter.format.basic_html
+  module:
+    - ckeditor
+_core:
+  default_config_hash: CJDLFoK3UF_avzRSQb8RwSj4ym4Qh1GHMB1TODljZQw
+format: basic_html
+editor: ckeditor
+settings:
+  toolbar:
+    rows:
+      -
+        -
+          name: Formatting
+          items:
+            - Bold
+            - Italic
+            - JustifyLeft
+            - JustifyCenter
+            - JustifyRight
+            - Undo
+            - Redo
+        -
+          name: Links
+          items:
+            - DrupalLink
+            - DrupalUnlink
+            - Anchor
+        -
+          name: Lists
+          items:
+            - BulletedList
+            - NumberedList
+        -
+          name: Media
+          items:
+            - Blockquote
+            - DrupalMediaLibrary
+        -
+          name: Indent
+          items:
+            - Outdent
+            - Indent
+        -
+          name: Format
+          items:
+            - Format
+            - Table
+        -
+          name: Tools
+          items:
+            - Source
+            - PasteText
+            - Paste
+            - PasteFromWord
+            - Maximize
+  plugins:
+    drupallink:
+      linkit_enabled: true
+      linkit_profile: default
+    indentblock:
+      enable: 1
+image_upload:
+  status: true
+  scheme: public
+  directory: inline-images
+  max_size: ''
+  max_dimensions:
+    width: null
+    height: null

@@ -1,0 +1,12 @@
+uuid: 192873a1-45f3-4c4b-b74d-164f9eba4e26
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs
+_core:
+  default_config_hash: 3LkaBRWAG3o0kwbCDps7QAQfd1MWYCahQCeTRFO4ick
+id: paragraph.responsive_image_third_half_
+label: 'Responsive image (third - half)'
+targetEntityType: paragraph
+cache: true

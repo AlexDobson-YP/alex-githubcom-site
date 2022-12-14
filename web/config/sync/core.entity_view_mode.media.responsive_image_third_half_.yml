@@ -1,0 +1,12 @@
+uuid: b9a04086-461f-4752-b56b-a36208521662
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+_core:
+  default_config_hash: Kfon7YL1XqhSZM9gjwjlx6rvDvZVuBFaymI5ENUsJU4
+id: media.responsive_image_third_half_
+label: 'Responsive image (third - half)'
+targetEntityType: media
+cache: true

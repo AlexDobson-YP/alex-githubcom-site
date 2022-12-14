@@ -1,0 +1,22 @@
+uuid: c78aea66-d400-4b27-83b9-2026c3743f70
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - opwo_theme
+_core:
+  default_config_hash: XJqWwLt1LDCnazcEN6QkJmCLjk4R0__-8s0OO9xeNjg
+id: opwo_theme_messages
+theme: opwo_theme
+region: highlighted
+weight: 0
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Status messages'
+  label_display: '0'
+  provider: system
+visibility: {  }

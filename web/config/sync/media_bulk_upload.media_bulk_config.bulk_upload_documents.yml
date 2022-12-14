@@ -1,0 +1,16 @@
+uuid: 6b15e85a-ba93-4f0a-98a4-f412b804730d
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: iZckELhaDiEtHi1Mm8xBXGewLAP0N-llmsc1-W_b7Ac
+id: bulk_upload_documents
+label: 'Bulk upload documents'
+media_types:
+  document: document
+  image: 0
+  remote_video: 0
+  svg: 0
+show_alt: null
+show_title: null
+form_mode: ''

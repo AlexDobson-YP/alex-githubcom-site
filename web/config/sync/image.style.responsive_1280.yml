@@ -1,0 +1,17 @@
+uuid: 491e7614-3e19-4622-a959-b182248056ba
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: 5fk3kFvbyBU6pCtLW2EDodIXby3kycU5CKi3Bc-amjs
+name: responsive_1280
+label: 'Responsive 1280'
+effects:
+  af59d305-b52a-4288-82dd-5b3bb6621fac:
+    uuid: af59d305-b52a-4288-82dd-5b3bb6621fac
+    id: image_scale
+    weight: 1
+    data:
+      width: 1280
+      height: 1280
+      upscale: false

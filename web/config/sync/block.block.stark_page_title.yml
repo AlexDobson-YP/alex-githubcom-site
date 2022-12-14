@@ -1,0 +1,20 @@
+uuid: 04b52bde-d491-4c6c-a87f-0f6714887786
+langcode: en
+status: true
+dependencies:
+  theme:
+    - stark
+_core:
+  default_config_hash: etmNMsfhLz5Ar9KJ6AhIkMcB2YbM0ooc1lHlozP4wmQ
+id: stark_page_title
+theme: stark
+region: content
+weight: -30
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  label_display: '0'
+  provider: core
+visibility: {  }

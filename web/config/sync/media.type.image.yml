@@ -1,0 +1,15 @@
+uuid: daffdb2c-f033-4f6b-96ac-49a2be84504d
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: KbBBa9oYPUNhodEWHxDt6GEgHnDWUXwFytl9nNAvl2c
+id: image
+label: Image
+description: 'Media type for all generic images.'
+source: image
+queue_thumbnail_downloads: false
+new_revision: false
+source_configuration:
+  source_field: field_media_image
+field_map: {  }

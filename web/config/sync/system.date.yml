@@ -1,0 +1,11 @@
+_core:
+  default_config_hash: u0NQ04kvduqBwXtYJIWKrThaS5Iy-QBZ5NPlY1xGuX0
+country:
+  default: CA
+first_day: 0
+timezone:
+  default: America/Edmonton
+  user:
+    configurable: true
+    warn: false
+    default: 0

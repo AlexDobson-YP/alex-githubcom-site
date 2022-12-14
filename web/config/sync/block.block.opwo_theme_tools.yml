@@ -1,0 +1,27 @@
+uuid: 92d96bcb-9cd0-41c8-b173-572a71e59178
+langcode: en
+status: false
+dependencies:
+  config:
+    - system.menu.tools
+  module:
+    - system
+  theme:
+    - opwo_theme
+_core:
+  default_config_hash: WAVAvj_2oofNzVEso-Y1y7FTef6-2bRgFibg1QVwr-E
+id: opwo_theme_tools
+theme: opwo_theme
+region: header
+weight: 0
+provider: null
+plugin: 'system_menu_block:tools'
+settings:
+  id: 'system_menu_block:tools'
+  label: Tools
+  label_display: visible
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

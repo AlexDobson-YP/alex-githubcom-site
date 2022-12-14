@@ -1,0 +1,56 @@
+{#
+/**
+ * @file
+ * Theme override for a breadcrumb trail.
+ *
+ * Available variables:
+ * - breadcrumb: Breadcrumb trail items.
+ */
+#}
+{% if breadcrumb|length > 1 %}
+  <nav class="breadcrumb" role="navigation" aria-labelledby="system-breadcrumb">
+    <h2 id="system-breadcrumb" class="visually-hidden">{{ 'Breadcrumb'|t }}</h2>
+    <ul itemscope itemtype="https://schema.org/BreadcrumbList">
+
+      {% for item in breadcrumb %}
+        {% if loop.last %}
+          {% set separator = false %}
+        {% else %}
+          {% set separator = true %}
+        {% endif %}
+
+        {% if item.url %}
+          <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+          {% else %}
+            <li>
+            {% endif %}
+
+            {% if '/' == item.url %}
+              <a class="breadcrumb_home" href="{{ url('<front>') }}" title="{{ 'Home'|t }}" itemprop="item">
+                <span itemprop="name" class="visually-hidden">{{ 'Home'|t }}</span>
+                <meta itemprop="position" content="{{ loop.index }}"/>
+                <svg viewbox="0 0 18 16" class="home_icon">
+                  <use xlink:href="#home"></use>
+                </svg>
+              </a>
+            {% else %}
+              {% if item.url %}
+                <a href="{{ item.url }}" title="{{ item.text }}" itemprop="item">
+                  <span itemprop="name">{{ item.text }}</span>
+                  <meta itemprop="position" content="{{ loop.index }}"/>
+                </a>
+              {% else %}
+                <span>{{ item.text }}</span>
+              {% endif %}
+            {% endif %}
+
+            {% if separator %}
+              <span class="sep">|</span>
+            {% endif %}
+
+          </li>
+        {% endfor %}
+
+      </ul>
+    </nav>
+  {% endif %}

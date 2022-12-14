@@ -1,0 +1,17 @@
+uuid: cd128a10-71bd-4f4c-80dd-7aa2220f1996
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: AyWb7OoAxQI_mlzJmwkCaBCDE8s52zlakEZAKGMTu2s
+name: responsive_2080
+label: 'Responsive 2080'
+effects:
+  6ef53e12-994e-42d9-a32f-da6708494220:
+    uuid: 6ef53e12-994e-42d9-a32f-da6708494220
+    id: image_scale
+    weight: 1
+    data:
+      width: 2080
+      height: 2080
+      upscale: false

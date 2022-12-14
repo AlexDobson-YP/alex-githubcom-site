@@ -1,0 +1,23 @@
+uuid: f21ea884-f509-43e1-a297-7d7c04894976
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - node.type.homepage
+  module:
+    - user
+_core:
+  default_config_hash: jem_QOJO6nO9v9ll0e77MedM3y2v9yZyY0Q3DTLFErQ
+id: node.homepage.teaser
+targetEntityType: node
+bundle: homepage
+mode: teaser
+content:
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  langcode: true

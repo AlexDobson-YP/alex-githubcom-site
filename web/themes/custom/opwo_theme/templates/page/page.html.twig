@@ -1,0 +1,18 @@
+<div class="layout-container">
+  {% include '@opwo_theme/header.html.twig' %}
+
+  {{ page.help }}
+  {{ page.breadcrumb }}
+  {{ page.highlighted }}
+
+  <main role="main">
+    {# link is in html.html.twig #}
+    <a id="main-content" tabindex="-1"></a>
+
+    <div class="layout-content container">
+      {{ page.content }}
+    </div>
+  </main>
+
+  {% include '@opwo_theme/footer.html.twig' %}
+</div>

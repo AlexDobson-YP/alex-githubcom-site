@@ -1,0 +1,41 @@
+uuid: dd14ee71-0a12-4308-a763-cddeaa7ec563
+langcode: en
+status: true
+dependencies:
+  config:
+    - image.style.responsive_1040
+    - image.style.responsive_1280
+    - image.style.responsive_1440
+    - image.style.responsive_1550
+    - image.style.responsive_2080
+    - image.style.responsive_320
+    - image.style.responsive_480
+    - image.style.responsive_520
+    - image.style.responsive_640
+    - image.style.responsive_768
+    - image.style.responsive_960
+_core:
+  default_config_hash: _PbVFoJWA6DIh4TuhhuKrL_KLKLkDOiMFWg7Z-YMWUM
+id: third_half
+label: 'Third - Half'
+image_style_mappings:
+  -
+    breakpoint_id: responsive_image.viewport_sizing
+    multiplier: 1x
+    image_mapping_type: sizes
+    image_mapping:
+      sizes: '(min-width:768px) 50vw, (min-width:1024px) 512px, 34vw'
+      sizes_image_styles:
+        - responsive_1040
+        - responsive_1280
+        - responsive_1440
+        - responsive_1550
+        - responsive_2080
+        - responsive_320
+        - responsive_480
+        - responsive_520
+        - responsive_640
+        - responsive_768
+        - responsive_960
+breakpoint_group: responsive_image
+fallback_image_style: responsive_1040

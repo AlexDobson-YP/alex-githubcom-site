@@ -1,0 +1,4 @@
+local:
+  uri: https://alex-external.dev.localhost
+  docker:
+    service: drupal

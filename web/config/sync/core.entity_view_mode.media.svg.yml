@@ -1,0 +1,12 @@
+uuid: 0b9254a2-0368-49e9-9bb9-549624a86c86
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+_core:
+  default_config_hash: j8dKMdkC-X7h8LBj8LE97Erpp0R9cJlgGo1Lvedlo-o
+id: media.svg
+label: SVG
+targetEntityType: media
+cache: true

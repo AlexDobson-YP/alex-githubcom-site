@@ -1,0 +1,10 @@
+footer {
+  @media screen and (max-width: 64rem) {
+    nav ul[class^="menu__"] {
+      li {
+        padding-top: $space_xs;
+        padding-bottom: $space_xs;
+      }
+    }
+  }
+}

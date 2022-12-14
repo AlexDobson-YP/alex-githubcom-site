@@ -1,0 +1,12 @@
+{# <button id="scrollTop">{{ 'Back to top'|t }}</button> #}
+
+{% if page.footer %}
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      {{ page.footer }}
+
+      <p>&copy;
+        {{ 'now' | date('Y')}}</p>
+    </div>
+  </footer>
+{% endif %}

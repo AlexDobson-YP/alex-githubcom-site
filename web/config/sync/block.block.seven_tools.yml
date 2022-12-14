@@ -1,0 +1,27 @@
+uuid: ef4ab16f-8855-41d3-8350-0c16508bb3f7
+langcode: en
+status: false
+dependencies:
+  config:
+    - system.menu.tools
+  module:
+    - system
+  theme:
+    - seven
+_core:
+  default_config_hash: WAVAvj_2oofNzVEso-Y1y7FTef6-2bRgFibg1QVwr-E
+id: seven_tools
+theme: seven
+region: header
+weight: 0
+provider: null
+plugin: 'system_menu_block:tools'
+settings:
+  id: 'system_menu_block:tools'
+  label: Tools
+  label_display: visible
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

@@ -1,0 +1,14 @@
+_core:
+  default_config_hash: PuXjSEhhet-mkg8Mcttgp42acdwDp5O6YOdRB01kOA8
+name: 'OnPoint WebOps Drupal'
+mail: do-not-reply@yellowpencil.com
+slogan: ''
+page:
+  403: ''
+  404: ''
+  front: /node/1
+admin_compact_mode: false
+weight_select_max: 100
+langcode: en
+default_langcode: en
+uuid: 05c0af52-3895-4ead-8451-c232bc9b9171
