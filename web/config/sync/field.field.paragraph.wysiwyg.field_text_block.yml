@@ -1,0 +1,21 @@
+uuid: 198cfd14-06a4-4817-ac02-73d3ec2dbc11
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_text_block
+    - paragraphs.paragraphs_type.wysiwyg
+  module:
+    - text
+id: paragraph.wysiwyg.field_text_block
+field_name: field_text_block
+entity_type: paragraph
+bundle: wysiwyg
+label: 'Text block'
+description: 'This is the help text for the text block.'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

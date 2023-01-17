@@ -1,0 +1,10 @@
+uuid: c08cce6a-11a4-4beb-ae50-fb95a54007d8
+langcode: en
+status: true
+dependencies: {  }
+id: wysiwyg
+label: WYSIWYG
+icon_uuid: null
+icon_default: null
+description: 'Contains the fields to make a WYSIWYG block.'
+behavior_plugins: {  }

@@ -13,7 +13,7 @@ services:
     ports:
       - 80
     environment:
-      VIRTUAL_HOST:alex-external.dev.localhost
+      VIRTUAL_HOST: alex-external.dev.localhost
       DB_NAME: drupal
       DB_USER: root
       DB_PASS: root
@@ -67,7 +67,7 @@ services:
     ports:
       - 8080
     environment:
-      VIRTUAL_HOST:alex-external-adminer.dev.localhost
+      VIRTUAL_HOST: alex-external-adminer.dev.localhost
       ADMINER_DEFAULT_SERVER: mariadb
     networks:
       - default
@@ -80,7 +80,7 @@ services:
       - 1025
       - 8025
     environment:
-      VIRTUAL_HOST:alex-external-mailhog.dev.localhost
+      VIRTUAL_HOST: alex-external-mailhog.dev.localhost
       VIRTUAL_PORT: 8025
     networks:
       - default
