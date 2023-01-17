@@ -3,8 +3,10 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.node.homepage.field_main_content
     - node.type.homepage
   module:
+    - entity_reference_revisions
     - user
 _core:
   default_config_hash: pxak9NtqzFPQansAO_0VUGsRkhiZQ1reIhzTbK0mQoE
@@ -13,10 +15,24 @@ targetEntityType: node
 bundle: homepage
 mode: default
 content:
-  links:
-    weight: 100
+  content_moderation_control:
     settings: {  }
     third_party_settings: {  }
+    weight: -20
+    region: content
+  field_main_content:
+    type: entity_reference_revisions_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
     region: content
 hidden:
   langcode: true
