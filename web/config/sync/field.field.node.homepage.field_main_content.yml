@@ -5,6 +5,7 @@ dependencies:
   config:
     - field.storage.node.field_main_content
     - node.type.homepage
+    - paragraphs.paragraphs_type.call_to_action
     - paragraphs.paragraphs_type.wysiwyg
   module:
     - entity_reference_revisions
@@ -22,9 +23,13 @@ settings:
   handler: 'default:paragraph'
   handler_settings:
     target_bundles:
+      call_to_action: call_to_action
       wysiwyg: wysiwyg
     negate: 0
     target_bundles_drag_drop:
+      call_to_action:
+        weight: 4
+        enabled: true
       from_library:
         weight: 3
         enabled: false

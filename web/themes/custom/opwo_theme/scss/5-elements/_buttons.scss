@@ -23,3 +23,18 @@ input[type="submit"] {
     background-color: $buttongrey;
   }
 }
+
+a.button-link {
+  display: inline-block;
+  width: auto;
+  height: auto;
+  padding: $space_xs;
+  border: solid 0.1rem $lightgrey;
+  border-radius: 0.4rem;
+  color: $black;
+  line-height: 1;
+  letter-spacing: normal;
+  cursor: pointer;
+
+  text-decoration: none;
+}
