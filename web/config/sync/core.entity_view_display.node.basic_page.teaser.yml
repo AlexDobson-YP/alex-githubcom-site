@@ -1,0 +1,25 @@
+uuid: ff2f6eb9-9866-4324-8563-c95239d9271c
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.basic_page.field_intro_paragraph
+    - field.field.node.basic_page.field_main_content
+    - node.type.basic_page
+  module:
+    - user
+id: node.basic_page.teaser
+targetEntityType: node
+bundle: basic_page
+mode: teaser
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_intro_paragraph: true
+  field_main_content: true
+  langcode: true
