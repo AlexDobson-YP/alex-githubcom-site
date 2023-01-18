@@ -1,0 +1,19 @@
+uuid: e834e4c8-2e69-423e-bed5-ae4a0d1b197d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_intro_paragraph
+    - node.type.basic_page
+id: node.basic_page.field_intro_paragraph
+field_name: field_intro_paragraph
+entity_type: node
+bundle: basic_page
+label: 'Intro paragraph'
+description: 'Optionally supply an introductory paragraph to the page explaining what the page is about. This will be styled in a larger font size than the body text to give emphasis to the summary.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long
