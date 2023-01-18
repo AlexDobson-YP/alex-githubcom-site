@@ -1,0 +1,10 @@
+uuid: 51724670-463c-40ee-9629-48684464b35b
+langcode: en
+status: true
+dependencies: {  }
+id: call_to_action
+label: 'Call to action'
+icon_uuid: null
+icon_default: null
+description: 'Contains the fields to make a Call to Action block.'
+behavior_plugins: {  }

@@ -1,0 +1,15 @@
+.call-to-action {
+  background: #3D3D3D;
+  color: #FEFEFE;
+  padding: 1.6rem;
+  border-radius: 0.4rem;
+
+  a.button-link {
+    background: #FEFEFE;
+    color: #3D3D3D;
+
+    &:hover {
+      background: #CCC;
+    }
+  }
+}

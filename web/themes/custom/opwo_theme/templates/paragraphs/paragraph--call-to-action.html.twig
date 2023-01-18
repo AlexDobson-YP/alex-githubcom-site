@@ -1,0 +1,18 @@
+{%
+  set classes = [
+    'call-to-action',
+    'paragraph',
+    'paragraph--type--' ~ paragraph.bundle|clean_class,
+    view_mode ? 'paragraph--view-mode--' ~ view_mode|clean_class,
+    not paragraph.isPublished() ? 'paragraph--unpublished'
+  ]
+%}
+{% block paragraph %}
+  <div{{ attributes.addClass(classes) }}>
+    {% block content %}
+      <h3>{{ content.field_title }}</h3>
+      {{ content.field_text_block }}
+      {{ content.field_button_link }}
+    {% endblock %}
+  </div>
+{% endblock paragraph %}
