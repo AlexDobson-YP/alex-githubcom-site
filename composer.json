@@ -196,13 +196,13 @@
     "drupal/views_infinite_scroll": "^1.8",
     "drupal/webform": "^6.0",
     "drush/drush": "^10.3",
-    "furf/jquery-ui-touch-punch": "*",
+    "furf/jquery-ui-touch-punch": "^1.0",
     "kint-php/kint": "^3.3",
     "kint-php/kint-js": "^2.0",
     "kint-php/kint-twig": "^3.0",
-    "yellowpencil/alerts_module_d8": "*",
-    "yellowpencil/drupal_admin_guide": "*",
-    "yellowpencil/drupal_yp_install_profile": "*"
+    "yellowpencil/alerts_module_d8": "^1.0",
+    "yellowpencil/drupal_admin_guide": "^1.0",
+    "yellowpencil/drupal_yp_install_profile": "^1.0"
   },
   "conflict": {
     "drupal/drupal": "*"
