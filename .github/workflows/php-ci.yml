@@ -37,4 +37,4 @@ jobs:
       run: docker compose -f docker-compose.github.yml up -d
 
     - name: Run Behat Tests
-      run: docker compose run drupal ./vendor/bin/behat
+      run: docker compose -f docker-compose.github.yml run drupal ./vendor/bin/behat
