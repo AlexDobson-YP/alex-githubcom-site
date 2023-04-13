@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "4edaac21727d4288dbf5f09f28b651e8",
+    "content-hash": "a57e0d064066fb9c1cc17887c63b9bb7",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -3013,27 +3013,27 @@
         },
         {
             "name": "drupal/ckeditor_indentblock",
-            "version": "1.0.0-beta2",
+            "version": "1.0.0-beta3",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/ckeditor_indentblock.git",
-                "reference": "8.x-1.0-beta2"
+                "reference": "8.x-1.0-beta3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/ckeditor_indentblock-8.x-1.0-beta2.zip",
-                "reference": "8.x-1.0-beta2",
-                "shasum": "30572bc18f0e7dbc7f119939a7b00dcf831500db"
+                "url": "https://ftp.drupal.org/files/projects/ckeditor_indentblock-8.x-1.0-beta3.zip",
+                "reference": "8.x-1.0-beta3",
+                "shasum": "adc453850ee6c3f1392be7d68d94ec62d0036fa5"
             },
             "require": {
-                "drupal/ckeditor": "*",
-                "drupal/core": "^8.1.0 || ^9"
+                "drupal/ckeditor": "^1",
+                "drupal/core": "^9.4 || ^10"
             },
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "8.x-1.0-beta2",
-                    "datestamp": "1592268138",
+                    "version": "8.x-1.0-beta3",
+                    "datestamp": "1681401769",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Project has not opted into security advisory coverage!"
@@ -3055,7 +3055,7 @@
                     "homepage": "https://www.drupal.org/user/256793"
                 }
             ],
-            "description": "Provides integration of the CKEditor IndentBlock plugin with the Drupal 8 CKEditor.",
+            "description": "Provides integration of the CKEditor IndentBlock plugin with CKEditor.",
             "homepage": "https://www.drupal.org/project/ckeditor_indentblock",
             "keywords": [
                 "Drupal"
@@ -13086,36 +13086,6 @@
             },
             "abandoned": "symfony/filesystem",
             "time": "2015-12-17T08:42:14+00:00"
-        },
-        {
-            "name": "yellowpencil/alerts_module_d8",
-            "version": "1.0",
-            "source": {
-                "type": "git",
-                "url": "git@git.yellowpencil.com:yellowpencil/alerts_module_d8.git",
-                "reference": "origin/master"
-            },
-            "type": "drupal-module"
-        },
-        {
-            "name": "yellowpencil/drupal_admin_guide",
-            "version": "1.0",
-            "source": {
-                "type": "git",
-                "url": "git@git.yellowpencil.com:yellowpencil/drupal_admin_guide.git",
-                "reference": "origin/main"
-            },
-            "type": "drupal-module"
-        },
-        {
-            "name": "yellowpencil/drupal_yp_install_profile",
-            "version": "1.0",
-            "source": {
-                "type": "git",
-                "url": "git@git.yellowpencil.com:yellowpencil/drupal_yp_install_profile.git",
-                "reference": "origin/main"
-            },
-            "type": "drupal-profile"
         }
     ],
     "packages-dev": [],
