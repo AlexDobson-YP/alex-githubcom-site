@@ -84,45 +84,6 @@
           "url": "https://download.ckeditor.com/youtube/releases/youtube_2.1.18.zip"
         }
       }
-    },
-    "alerts_module_d8": {
-      "type": "package",
-      "package": {
-        "name": "yellowpencil/alerts_module_d8",
-        "version": "1.0",
-        "type": "drupal-module",
-        "source": {
-          "url": "git@git.yellowpencil.com:yellowpencil/alerts_module_d8.git",
-          "type": "git",
-          "reference": "origin/master"
-        }
-      }
-    },
-    "drupal_admin_guide": {
-      "type": "package",
-      "package": {
-        "name": "yellowpencil/drupal_admin_guide",
-        "version": "1.0",
-        "type": "drupal-module",
-        "source": {
-          "url": "git@git.yellowpencil.com:yellowpencil/drupal_admin_guide.git",
-          "type": "git",
-          "reference": "origin/main"
-        }
-      }
-    },
-    "drupal_yp_install_profile": {
-      "type": "package",
-      "package": {
-        "name": "yellowpencil/drupal_yp_install_profile",
-        "version": "1.0",
-        "type": "drupal-profile",
-        "source": {
-          "url": "git@git.yellowpencil.com:yellowpencil/drupal_yp_install_profile.git",
-          "type": "git",
-          "reference": "origin/main"
-        }
-      }
     }
   },
   "require": {
@@ -199,10 +160,7 @@
     "furf/jquery-ui-touch-punch": "^1.0",
     "kint-php/kint": "^3.3",
     "kint-php/kint-js": "^2.0",
-    "kint-php/kint-twig": "^3.0",
-    "yellowpencil/alerts_module_d8": "^1.0",
-    "yellowpencil/drupal_admin_guide": "^1.0",
-    "yellowpencil/drupal_yp_install_profile": "^1.0"
+    "kint-php/kint-twig": "^3.0"
   },
   "conflict": {
     "drupal/drupal": "*"
